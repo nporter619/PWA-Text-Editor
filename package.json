@@ -1,16 +1,20 @@
 {
   "name": "jate",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "server/server.js",
+  "engines": {
+    "node": "16.20.1",
+    "npm": ">=7.0.0"
+  },
   "scripts": {
-    "start:dev": "nodemon server.js",
+    "start:dev": "nodemon server/server.js",
     "start": "node server/server.js",
     "server": "node server/server.js",
+    "heroku-postbuild": "npm run build",
     "build": "cd client && npm run build",
     "install": "cd client && npm install",
     "client": "cd client && npm start"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",

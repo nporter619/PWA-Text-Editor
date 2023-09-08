@@ -28,7 +28,8 @@ module.exports = () => {
         display: 'standalone',
         icons: [
           {
-            src: path.resolve('src/assets/icon.png'),
+            // Updated the path to logo.png
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
           },
         ],
